@@ -1,0 +1,30 @@
+Retrieval-Augmented Generation (RAG)
+
+Retrieval-Augmented Generation is a technique that improves the answers of a Large Language Model (LLM) by first retrieving relevant information from an external knowledge source and then providing it to the model as context for generating the response.
+
+Why RAG is needed:
+LLMs have a fixed training cutoff, can hallucinate facts, and do not know private or company-specific data. RAG addresses these problems by grounding the model's answer in real, up-to-date documents.
+
+Main components:
+1. Knowledge base: A collection of documents (text files, PDFs, web pages, etc.).
+2. Chunking: Splitting documents into smaller pieces for better retrieval.
+3. Embedding model: Converts chunks and queries into vectors.
+4. Vector store: A database (FAISS, Chroma, Pinecone) that stores embeddings and supports similarity search.
+5. Retriever: Finds the most relevant chunks for a user query using semantic search.
+6. Generator (LLM): Produces the final answer using the query plus the retrieved context.
+
+RAG pipeline:
+- Indexing phase: Load documents -> split into chunks -> create embeddings -> store in vector database.
+- Query phase: User question -> embed query -> retrieve top-k chunks -> build prompt with context -> LLM generates answer.
+
+Benefits:
+- Reduces hallucinations
+- Uses current and private data without retraining the model
+- Provides traceable sources for answers
+- More cost-effective than fine-tuning for knowledge updates
+
+Challenges:
+Poor chunking, irrelevant retrieval, context window limits, and evaluating answer quality. Techniques such as re-ranking, hybrid search, and query rewriting help address these issues.
+
+Common frameworks:
+LangChain, LlamaIndex, Haystack.

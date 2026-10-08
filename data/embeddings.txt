@@ -1,0 +1,23 @@
+Embeddings
+
+An embedding is a numerical representation of data, such as words, sentences, documents, or images, in the form of a dense vector of real numbers. Embeddings capture the meaning and relationships of the data so that similar items are placed close to each other in vector space.
+
+Why embeddings are useful:
+Computers cannot understand raw text directly. Embeddings convert text into numbers while preserving semantic meaning. For example, the words "king" and "queen" will have vectors that are close together, while "king" and "banana" will be far apart.
+
+Types of embeddings:
+- Word embeddings: Word2Vec, GloVe, FastText (one vector per word).
+- Contextual embeddings: BERT and transformer-based models, where the vector of a word depends on its context.
+- Sentence/document embeddings: Sentence-BERT, OpenAI embedding models, and similar models that represent entire sentences or paragraphs.
+- Image and multimodal embeddings: CLIP and similar models that map images and text into the same space.
+
+Measuring similarity:
+- Cosine similarity: Measures the angle between two vectors (most common).
+- Euclidean distance: Measures straight-line distance.
+- Dot product: Measures alignment and magnitude.
+
+Storage:
+Embeddings are usually stored in vector databases such as FAISS, Chroma, Pinecone, Weaviate, or Qdrant, which allow fast nearest-neighbor search.
+
+Applications:
+Semantic search, recommendation systems, clustering, duplicate detection, classification, and Retrieval-Augmented Generation (RAG).

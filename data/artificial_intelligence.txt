@@ -1,0 +1,21 @@
+Artificial Intelligence (AI)
+
+Artificial Intelligence is the field of computer science focused on building systems that can perform tasks that normally require human intelligence. These tasks include learning from experience, understanding natural language, recognizing images and speech, reasoning, planning, and making decisions.
+
+Types of AI:
+1. Narrow AI (Weak AI): Designed for a specific task, such as spam filtering, voice assistants, or recommendation systems. All AI in use today is narrow AI.
+2. General AI (Strong AI): A hypothetical system that can understand, learn, and apply knowledge across any domain at a human level.
+3. Super AI: A theoretical level of intelligence that surpasses human capabilities in every area.
+
+Major branches of AI:
+- Machine Learning: Systems that learn patterns from data.
+- Natural Language Processing (NLP): Understanding and generating human language.
+- Computer Vision: Interpreting images and video.
+- Robotics: Intelligent physical machines.
+- Expert Systems: Rule-based systems that mimic human specialists.
+
+Applications:
+AI is used in healthcare (disease detection), finance (fraud detection), education (personalized learning), transportation (self-driving cars), customer support (chatbots), and many other industries.
+
+Challenges:
+Key challenges include data privacy, algorithmic bias, lack of transparency (explainability), high computational cost, and the ethical use of AI systems.

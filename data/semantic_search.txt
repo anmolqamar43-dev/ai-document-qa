@@ -1,0 +1,25 @@
+Semantic Search
+
+Semantic search is a search technique that finds results based on the meaning and intent of a query rather than only matching exact keywords. It understands context, synonyms, and related concepts.
+
+Keyword search vs. semantic search:
+- Keyword search (e.g., BM25, TF-IDF) matches the exact words in the query. A search for "car repair" may miss a document that says "automobile maintenance".
+- Semantic search uses embeddings, so "car repair" and "automobile maintenance" are recognized as closely related.
+
+How semantic search works:
+1. Convert all documents into embeddings and store them in a vector database or index.
+2. When a user submits a query, convert the query into an embedding using the same model.
+3. Compare the query embedding with document embeddings using a similarity measure such as cosine similarity.
+4. Return the top-k most similar documents, ranked by score.
+
+Improving results:
+- Chunking: Split long documents into smaller passages before embedding.
+- Hybrid search: Combine keyword search and semantic search for better accuracy.
+- Re-ranking: Use a cross-encoder model to re-order the top results.
+- Metadata filtering: Narrow results by date, category, or source.
+
+Common tools:
+Sentence-Transformers, FAISS, ChromaDB, Elasticsearch, Pinecone, and Qdrant.
+
+Applications:
+Enterprise document search, FAQ matching, e-commerce product search, question answering, and the retrieval step in RAG systems.

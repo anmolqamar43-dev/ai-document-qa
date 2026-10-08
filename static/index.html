@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>AI Document QA</title>
+
+    <link
+        rel="stylesheet"
+        href="/static/style.css"
+    >
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>AI-Powered Document QA</h1>
+
+        <p class="subtitle">
+            Ask questions from your uploaded documents
+        </p>
+
+
+        <!-- Question Section -->
+
+        <div class="question-box">
+
+            <textarea
+                id="question"
+                placeholder="Ask a question about your documents..."
+            ></textarea>
+
+            <button onclick="askQuestion()">
+                Ask Question
+            </button>
+
+        </div>
+
+
+        <!-- Answer Section -->
+
+        <div
+            id="answer-section"
+            class="result-section"
+        >
+
+            <h2>Answer</h2>
+
+            <div id="answer">
+                Your answer will appear here.
+            </div>
+
+        </div>
+
+
+        <!-- Sources Section -->
+
+        <div
+            id="sources-section"
+            class="result-section"
+        >
+
+            <h2>Sources</h2>
+
+            <div id="sources">
+                Sources will appear here.
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <script src="/static/script.js"></script>
+
+</body>
+
+</html>
